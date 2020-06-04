@@ -13,7 +13,6 @@ hr.break {
 }
 
 
-/* TODO: Figure out how to stop navbar from blocking H2's */
 .navbar.scrolled {
     background: #70bcff;
     transition: background 500ms;
