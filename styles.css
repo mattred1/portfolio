@@ -1,5 +1,9 @@
 /* Should find a way to incorporate background svg pattern without making it look overwhelming and unreadable: https://www.svgbackgrounds.com/#abstract-timekeeper */
 
+html {
+  scroll-behavior: smooth;
+}
+
 #intro .cursive {
     font-family: 'Special Elite', cursive;
 }
