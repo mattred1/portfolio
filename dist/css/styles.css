@@ -65,14 +65,14 @@ hr {
   list-style-type: none;
 }
 #mainNavbar ul a {
-  margin: 10px 30px;
+  margin: 0 10px;
   position: relative;
 }
 #mainNavbar ul a:before {
   position: absolute;
   bottom: -2px;
   content: "";
-  width: 100%;
+  width: 80%;
   height: 3px;
   background: #ef476f;
   transform: translateX(-100%);
