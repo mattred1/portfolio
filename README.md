@@ -7,7 +7,10 @@ A site built to house my portfolio, long-term (check out [mattredinger.com](http
 
 ## To Do
 
-- Dark Mode
+- Redesign site: add some more fun colors for dark/light mode
+- Get extra Bootstrap src out
+- Update navbar to transition colors
+- Switch all JavaScript to jQuery
 
 
 
@@ -17,3 +20,6 @@ A site built to house my portfolio, long-term (check out [mattredinger.com](http
 
 - Mobile-first
 - [Bootstrap 4.4.1](https://getbootstrap.com/docs/4.4/getting-started/introduction)
+- SCSS
+- jQuery
+- Bootstrap
