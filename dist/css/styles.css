@@ -1,0 +1,86 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #24292D;
+  color: #F1F7F8;
+}
+body.light-mode {
+  background-color: #F1F7F8;
+  color: #24292D;
+}
+body.light-mode a {
+  color: #007dff;
+}
+body.light-mode button {
+  background-color: #24292D;
+  color: #F1F7F8;
+}
+body.light-mode hr {
+  background-color: #ef476f;
+}
+body.light-mode .card {
+  border: 1px solid #24292D;
+}
+
+a {
+  color: #ef476f;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: overline;
+  color: #ef476f;
+}
+
+button, .btn {
+  background-color: #F1F7F8;
+  color: #24292D;
+}
+button:hover, .btn:hover {
+  color: #ef476f;
+}
+
+hr {
+  height: 10px;
+  background: #007dff;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  width: 20%;
+  border: 0;
+  border-radius: 10px;
+}
+
+#intro .cursive {
+  font-family: "Special Elite", cursive;
+}
+
+.scrolled {
+  transition: background-color 900ms ease-in-out;
+  background: #E0EAFC;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #CFDEF3, #E0EAFC);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.zoom {
+  transition: transform 0.2s;
+}
+.zoom:hover {
+  transform: scale(1.1);
+}
+
+.card {
+  transform: perspective(750px) translate3d(0px, 0px, -250px) rotateX(27deg) scale(0.9, 0.9);
+  box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
+  transition: 0.4s ease-in-out transform;
+  border: none;
+}
+.card .card-body {
+  color: #24292D;
+}
+.card:hover {
+  transform: translate3d(0px, 0px, -250px);
+}

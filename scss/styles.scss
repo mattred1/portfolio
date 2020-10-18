@@ -1,0 +1,118 @@
+$dark-color: #24292D;
+$light-color: #F1F7F8;
+$pink-color: #ef476f;
+$blue-color: #007dff;
+$gray-color:#c6c6c6;
+$floral-color: #a288e3;
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: $dark-color;
+    color: $light-color;
+
+    &.light-mode {
+        background-color: $light-color;
+        color: $dark-color;
+    
+        a {
+            color: $blue-color;
+        }
+    
+        button {
+            background-color: $dark-color;
+            color: $light-color;
+        }
+
+        hr {
+            background-color: $pink-color;
+        }
+
+        .card {
+            border: 1px solid $dark-color;
+        }
+    }
+}
+
+a {
+    color: $pink-color;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: overline;
+        color: $pink-color;
+    }
+
+}
+
+button, .btn {
+    background-color: $light-color;
+    color: $dark-color;
+    &:hover {
+        color: $pink-color;
+    }
+}
+
+
+
+
+hr {
+    height: 10px;
+    background: $blue-color;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    width: 20%;
+    border: 0;
+    border-radius: 10px;
+
+}
+
+
+
+
+
+#intro {
+    .cursive {
+        font-family: 'Special Elite', cursive;
+    }
+}
+
+
+
+.scrolled {
+    //transition not working
+    transition: background-color 900ms ease-in-out;
+    background: #E0EAFC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+
+.zoom {
+    transition: transform .2s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+
+.card {
+    transform:
+        perspective(750px) translate3d(0px, 0px, -250px) rotateX(27deg) scale(0.9, 0.9);
+    box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
+    transition: 0.4s ease-in-out transform;
+    border: none;
+    .card-body {
+        color: $dark-color;
+    }
+
+    &:hover {
+        transform: translate3d(0px, 0px, -250px);
+    }
+}
