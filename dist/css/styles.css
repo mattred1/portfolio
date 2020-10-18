@@ -23,6 +23,9 @@ body.light-mode hr {
 body.light-mode .card {
   border: 1px solid #24292D;
 }
+body.light-mode #mainNavbar ul a:before {
+  background: #007dff;
+}
 
 a {
   color: #ef476f;
@@ -33,11 +36,13 @@ a:hover {
   color: #ef476f;
 }
 
-button, .btn {
+button,
+.btn {
   background-color: #F1F7F8;
   color: #24292D;
 }
-button:hover, .btn:hover {
+button:hover,
+.btn:hover {
   color: #ef476f;
 }
 
@@ -53,6 +58,30 @@ hr {
 
 #intro .cursive {
   font-family: "Special Elite", cursive;
+}
+
+#mainNavbar ul {
+  display: flex;
+  list-style-type: none;
+}
+#mainNavbar ul a {
+  margin: 10px 30px;
+  position: relative;
+}
+#mainNavbar ul a:before {
+  position: absolute;
+  bottom: -2px;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #ef476f;
+  transform: translateX(-100%);
+  opacity: 0;
+}
+#mainNavbar ul a:hover:before {
+  opacity: 1;
+  transition: 0.5s transform ease, 0.8s opacity ease;
+  transform: translateX(0);
 }
 
 .scrolled {

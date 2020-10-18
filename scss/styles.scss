@@ -19,11 +19,11 @@ body {
     &.light-mode {
         background-color: $light-color;
         color: $dark-color;
-    
+
         a {
             color: $blue-color;
         }
-    
+
         button {
             background-color: $dark-color;
             color: $light-color;
@@ -35,6 +35,16 @@ body {
 
         .card {
             border: 1px solid $dark-color;
+        }
+
+        #mainNavbar {
+            ul {
+                a {
+                  &:before {
+                    background: $blue-color;
+                  }
+                }
+            }
         }
     }
 }
@@ -50,9 +60,11 @@ a {
 
 }
 
-button, .btn {
+button,
+.btn {
     background-color: $light-color;
     color: $dark-color;
+
     &:hover {
         color: $pink-color;
     }
@@ -82,7 +94,35 @@ hr {
     }
 }
 
-
+#mainNavbar {
+    ul {
+        display: flex;
+        list-style-type: none;
+        a {
+          margin: 10px 30px;
+          position: relative;
+      
+          &:before {
+            position: absolute;
+            bottom: -2px;
+            content: '';
+            width: 100%;
+            height: 3px;
+            background: $pink-color;
+            transform: translateX(-100%);
+            opacity: 0;
+          }
+      
+          &:hover {
+            &:before {
+              opacity: 1;
+              transition: 0.5s transform ease, 0.8s opacity ease;
+              transform: translateX(0);
+            }
+          }
+        }
+      }
+    }
 
 .scrolled {
     //transition not working
@@ -90,11 +130,14 @@ hr {
     -webkit-transition: background-color 3s ease-in;
     -moz-transition: background-color 3s ease-in;
     -o-transition: background-color 3s ease-in;
-  
-    background: #E0EAFC;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    }
+
+    background: #E0EAFC;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
 
 .zoom {
@@ -112,6 +155,7 @@ hr {
     box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
     transition: 0.4s ease-in-out transform;
     border: none;
+
     .card-body {
         color: $dark-color;
     }
