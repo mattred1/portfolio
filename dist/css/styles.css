@@ -56,7 +56,10 @@ hr {
 }
 
 .scrolled {
-  transition: background-color 900ms ease-in-out;
+  transition: background-color 3s ease-in;
+  -webkit-transition: background-color 3s ease-in;
+  -moz-transition: background-color 3s ease-in;
+  -o-transition: background-color 3s ease-in;
   background: #E0EAFC;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);
