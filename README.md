@@ -13,7 +13,7 @@ A site built to house my portfolio, long-term (check out [mattredinger.com](http
 - Update navbar to transition colors
 - Switch all JavaScript to jQuery
 - Fix hr length overflowing, but keep them to look like stripes
-
+- Consider adding fun transition/transform like [this](https://thoughtbot.com/blog/transitions-and-transforms) or [this](https://codepen.io/ImageHoverEffects/pen/GfJLg)
 
 
 
