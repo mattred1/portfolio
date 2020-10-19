@@ -19,6 +19,7 @@ body {
     &.light-mode {
         background-color: $light-color;
         color: $dark-color;
+        // transition: 400ms; -- would only slow transition when switching from dark to light, not light to dark
 
         a {
             color: $blue-color;
@@ -29,12 +30,12 @@ body {
             color: $light-color;
         }
 
-        hr {
-            background-color: $pink-color;
-        }
-
         .card {
             border: 1px solid $dark-color;
+        }
+
+        hr {
+            background: $blue-color;
         }
 
         #mainNavbar {
@@ -80,17 +81,19 @@ button,
 
 
 hr {
-    height: 10px;
-    background: $blue-color;
+    height: 30vh;
+    background: $pink-color;
     margin-top: 6rem;
     margin-bottom: 6rem;
-    width: 20%;
+    width: 120%;
     border: 0;
-    border-radius: 10px;
-
+    // border-radius: 10px;
+    transform: rotate(5deg);
+    position: relative;
+    margin-left: -40px;
 }
 
-
+  
 
 
 
@@ -108,7 +111,7 @@ hr {
 
     .navbar-brand {
         button {
-            border-radius: 20px;
+            border-radius: 50%;
             border: none;
         }
         
