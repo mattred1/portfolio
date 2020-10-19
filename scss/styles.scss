@@ -208,7 +208,15 @@ hr {
     -webkit-transition: background-color 1s ease-in-out;
     -moz-transition: background-color 1s easeease-in-out;
     -o-transition: background-color 1s ease-in-out;
-    background: #007dff;
+    background: $light-color;
+
+    a {
+        color: $blue-color;
+        
+        &:before {
+            background: $blue-color !important;
+        }
+    }
 }
 // End properties to display on navbar when scrolling down
 

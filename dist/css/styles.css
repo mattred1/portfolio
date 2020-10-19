@@ -147,7 +147,13 @@ hr {
   -webkit-transition: background-color 1s ease-in-out;
   -moz-transition: background-color 1s easeease-in-out;
   -o-transition: background-color 1s ease-in-out;
-  background: #007dff;
+  background: #F1F7F8;
+}
+.scrolled a {
+  color: #007dff;
+}
+.scrolled a:before {
+  background: #007dff !important;
 }
 
 .zoom {
