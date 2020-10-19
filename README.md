@@ -7,11 +7,12 @@ A site built to house my portfolio, long-term (check out [mattredinger.com](http
 
 ## To Do
 
-- Redesign site: add some more fun colors for dark/light mode
+- Organize/clean up SCSS file
+- Fix coordination of nav/scrolled colors with dark/light mode
 - Get extra Bootstrap src out
 - Update navbar to transition colors
 - Switch all JavaScript to jQuery
-
+- Fix hr length overflowing, but keep them to look like stripes
 
 
 
