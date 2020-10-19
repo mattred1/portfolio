@@ -1,35 +1,38 @@
 html {
   scroll-behavior: smooth;
+}
+
+body {
   background-color: #24292D;
   color: #F1F7F8;
 }
 
-body .light-mode {
+.light-mode {
   background-color: #F1F7F8;
   color: #24292D;
 }
-body .light-mode a {
+.light-mode a {
   color: #007dff;
 }
-body .light-mode button {
+.light-mode button {
   background-color: #24292D;
   color: #F1F7F8;
 }
-body .light-mode .card {
+.light-mode .card {
   border: 1px solid #24292D;
 }
-body .light-mode .scrolled {
+.light-mode .scrolled {
   background-color: #24292D;
 }
-body .light-mode hr {
+.light-mode hr {
   background: #007dff;
 }
-body .light-mode #mainNavbar .navbar-toggler {
+.light-mode #mainNavbar .navbar-toggler {
   background-color: #F1F7F8;
   color: #24292D;
   border: 1px solid #ef476f;
 }
-body .light-mode #mainNavbar ul a:before {
+.light-mode #mainNavbar ul a:before {
   background: #007dff;
 }
 

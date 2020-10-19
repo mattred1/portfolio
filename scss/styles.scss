@@ -9,14 +9,17 @@ $floral-color: #a288e3;
 
 html {
     scroll-behavior: smooth;
-    background-color: $dark-color;
-    color: $light-color;
-
 }
 
 
 
 body {
+    background-color: $dark-color;
+    color: $light-color;
+}
+
+
+
 // Start light mode classes
 .light-mode {
     background-color: $light-color;
@@ -61,11 +64,6 @@ body {
     }
 }
 // End light mode classes
-
-}
-
-
-
 
 
 
@@ -157,7 +155,6 @@ hr {
                 }
             }
         }
-    // Start  transfrom/transition for fancy nav underline
     }
 }
 
