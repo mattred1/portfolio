@@ -5,6 +5,7 @@ html {
 body {
   background-color: #24292D;
   color: #F1F7F8;
+  overflow-x: hidden;
 }
 
 .light-mode {
