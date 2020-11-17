@@ -61,11 +61,10 @@ hr {
   background: #ef476f;
   margin-top: 6rem;
   margin-bottom: 6rem;
-  width: 120%;
+  width: 100%;
   border: 0;
-  transform: rotate(5deg);
+  transform: skew(0deg, 10deg);
   position: relative;
-  margin-left: -40px;
 }
 
 #intro .cursive {
