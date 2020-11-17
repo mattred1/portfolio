@@ -38,12 +38,12 @@ body {
 }
 
 a {
-  color: #F1F7F8;
+  color: #007dff;
   text-decoration: none;
 }
 a:hover {
   text-decoration: overline;
-  color: #F1F7F8;
+  color: #007dff;
 }
 
 button,
@@ -78,6 +78,7 @@ hr {
 #mainNavbar .navbar-brand button {
   border-radius: 50%;
   border: none;
+  transition: 1s;
 }
 #mainNavbar ul {
   display: flex;

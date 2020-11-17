@@ -69,12 +69,12 @@ body {
 
 
 a {
-    color: $light-color;
+    color: $blue-color;
     text-decoration: none;
 
     &:hover {
         text-decoration: overline;
-        color: $light-color;
+        color: $blue-color;
     }
 }
 
@@ -121,6 +121,7 @@ hr {
         button {
             border-radius: 50%;
             border: none;
+            transition: 1s;
         }
     }
 
