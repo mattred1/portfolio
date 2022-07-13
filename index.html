@@ -1,42 +1,35 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Matt Redinger's Portfolio Website</title>
-        <meta name="description" content="Matthew Redinger is a Baltimore front end web developer and web designer. This is his personal portfolio and resume website">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Site icon and license link: https://fontawesome.com/license -->
-        <link rel="shortcut icon" href="imgs/code-solid.ico">  
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Matt Redinger's Portfolio Website</title>
+    <meta name="description" content="Matthew Redinger is a Baltimore front end web developer and web designer. This is his personal portfolio and resume website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Google font links -->
-        <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheet">
+    <!-- Site icon and license link: https://fontawesome.com/license -->
+    <link rel="shortcut icon" href="imgs/code-solid.ico">
 
-        <!-- Bootstrap 4.4.1 CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <!-- https://getbootstrap.com/docs/4.4/getting-started/introduction/ -->
+    <!-- Google font links -->
+    <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheet">
 
-        <!-- Personal stylesheet -->
-        <link rel="stylesheet" href="dist/css/styles.css">
+    <!-- Bootstrap 4.4.1  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 
-        <!-- Font Awesome script -->
-        <script src="https://kit.fontawesome.com/6a002836fd.js" crossorigin="anonymous"></script>
+    <!-- Personal stylesheet -->
+    <link rel="stylesheet" href="dist/css/styles.css">
 
 
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-            <!-- For logo down the line: https://logohub.io/ -->
+    <!-- Font Awesome script -->
+    <script src="https://kit.fontawesome.com/6a002836fd.js" crossorigin="anonymous"></script>
 
-            <!-- Start nav -->
+
+</head>
+
+<body>
+
+    <!-- Start nav -->
     <nav id="mainNavbar" class="navbar navbar-expand-md sticky-top">
         <a class="navbar-brand"><button class="justify-content-end zoom" type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">🌛</button></a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
@@ -61,20 +54,17 @@
                 </li>
             </ul>
         </div>
-
-        
     </nav>
     <!-- End nav -->
 
-    
+
 
     <section id="intro" class="container-fluid mb-4">
         <div class="row align-items-center">
             <div class="col-lg-12">
                 <div class="text-center mt-5">
-                    <h1 class="cursive display-3 mb-5">Matt is <button class="mb-3 btn-lg btn zoom"
-                        onclick="document.getElementById('whoAmI').innerHTML = nextWord();">...</button></h1>
-                   
+                    <h1 class="cursive display-3 mb-5">Matt is <button class="mb-3 btn-lg btn zoom" onclick="document.getElementById('whoAmI').innerHTML = nextWord();">...</button></h1>
+
                     <h2 class="cursive" id="whoAmI"></h2>
                 </div>
             </div>
@@ -86,61 +76,77 @@
 
 
 
-<hr class="top-hr" id="about">
+    <hr class="top-hr" id="about">
 
 
 
     <section class="container">
         <h2 class="text-center mb-5">About Me</h2>
-        <p class="text-center">After working for five years in the psychology and behavioral field, I switched gears to pursue my lifelong interest of coding and computers. My background in psychology helps me determine the needs of clients and customers and allows me to create things that resonate with them and make a long lasting impression.</p>
+        <p class="text-center lead">After graduating from UMBC with a degree in psychology, I took a front-end web development course, and transitioned my career into the marketing field because I was fascinated by the psychology of user engagement and design. I now pride myself on being thorougly involved in the life of a customer journey, working with both email and web development and design. My passion is learning new technologies and being able to apply them in an interesting way.</p>
 
     </section>
 
 
-<hr class="top-hr" id="background">
+    <hr class="top-hr" id="background">
 
     <section class="container mb-4">
-        <h2 class="text-center mb-5">Background</h2>
+        <h2 class="text-center mb-5">Background and Skills</h2>
 
         <div class="d-flex flex-column flex-md-row justify-content-center">
             <div class="mb-3 px-2">
-                <h3 class="text-center">What you should know:</h3>
-                <ul>
+                <h3 class="text-center mb-3">What you should know:</h3>
+
+                <p class="h4 mb-0"><span class="h3 mr-3">2015</span> Graduated from <a href="https://betamore.com/" target="_blank">Betamore</a></p>
+                <p><em>I successfully founded and ran a meetup group, called jrWebDev, to create a forum for new&nbsp;coders.</em></p>
+
+                <p class="h4 mb-0"><span class="h3 mr-3">2017</span> Started at Agora Financial (Now Consilience)</p>
+                <p class="mb-1"><em>I started there as an Email Production Specialist, focusing on developing and designing Three Founders Publishing newsletters.</em></p>
+                <p><em>In 2019, I was promoted to Senior Email Developer, leading a team of Email Production&nbsp;Specialists.</em></p>
+
+                <p class="h4 mb-0"><span class="h3 mr-3">2021</span> Started at Legacy Research Group</p>
+                <p><em>My role as a developer and designer allowed me to learn more about Salesforce journeys and enhance a lot of my&nbsp;skills.</em></p>
+
+                <!-- <ul>
                     <li><a href="https://betamore.com/" target="_blank">Betamore</a> grad in 2015</li>
-                        <ul>
-                            <li>Successfully founded and ran meetup group (jrWebDev) to create a forum for new coders</li>
-                        </ul>
+                    <ul>
+                        <li>Successfully founded and ran meetup group (jrWebDev) to create a forum for new coders</li>
+                    </ul>
                     <li>Started at Agora Financial as an Email Production Specialist in Summer 2017</li>
-                        <ul>
-                            <li>Promoted to Senior Email Developer in Winter 2019</li>
-                        </ul>
+                    <ul>
+                        <li>Promoted to Senior Email Developer in Winter 2019</li>
+                    </ul>
                     <li>Completely revamped team workflow to speed up processes</li>
-                </ul>
+                </ul> -->
             </div>
 
             <div class="mb-2">
-                <h3 class="text-center">Adept:</h3>
                 <ul>
                     <li>HTML</li>
                     <li>CSS</li>
+                    <li>Sass & SCSS</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                    <li>SQL</li>
+                    <li>PHP</li>
+                    <li>APIs</li>
+                    <li>AJAX</li>
                     <li>Git</li>
                     <li>Bootstrap</li>
-                    <li>Responsive design</li>
-                    <li>Mobile-first design</li>
-                    <li>Adobe Photoshop</li>
-                    <li>Email Deliverability</li>
-                </ul> 
+                </ul>
             </div>
-            <div class="mb-2 c">
-                <h3 class="text-center">Comfortable:</h3>
-                  <ul>
-                      <li>JavaScript</li>
-                      <li>jQuery</li>
-                      <li>Sass/SCSS</li>
-                      <li>WordPress</li>
-                      <li>SQL</li>
-                      <li>Adobe Illustrator</li>
-                  </ul>
+            <div class="mb-2">
+                <ul>
+                    <li>WordPress</li>
+                    <li>Jira</li>
+                    <li>Confluence</li>
+                    <li>Salesforce</li>
+                    <li>Responsive design</li>
+                    <li>UI design</li>
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe Illustrator</li>
+                    <li>Email Deliverability</li>
+
+                </ul>
 
             </div>
         </div>
@@ -151,95 +157,104 @@
 
 
 
- <hr class="top-hr" id="projects">
+    <hr class="top-hr" id="projects">
 
 
 
-<section>
-    <h2 class="text-center mb-5">Projects</h2>
-    
-    <div class="container">        
-        <div class="d-flex flex-wrap justify-content-center">
-    
-            <div class="card col-11 col-md-5 col-lg-4 col-xl-3 wrap m-2 p-0">
-                <a href="https://mattred1.github.io/wedding/" target="_blank"><img src="imgs/wedding-big.jpg" class="card-img-top img-fluid" alt="Wedding website"></a>
-              <div class="card-body">
-                <h5 class="card-title">My Wedding</h5>
-                <p class="card-text">I thought it would be fun to build my own wedding website as one of my first big projects! I was right. <br><em>Ft. Bootstrap</em></p>
-                <a href="https://mattred1.github.io/wedding/" target="_blank" class="btn zoom btn-secondary active" role="button" aria-pressed="true">Look Now</a>
-              </div>
-            </div>
-    
-    
-            <div class="card col-11 col-md-5 col-lg-4 col-xl-3 wrap m-2 p-0">
-                <a href="https://mattred1.github.io/itinerary/" target="_blank" ><img src="imgs/spain-big.jpg" class="card-img-top" alt="Spain website"></a>
-              <div class="card-body">
-                <h5 class="card-title">To Spain and Beyond!</h5>
-                <p class="card-text">I decided to journal my trip to Spain. <br><em>Ft. Bootstrap</em></p>
-                <a href="https://mattred1.github.io/itinerary/" target="_blank" class="btn zoom btn-secondary active" role="button" aria-pressed="true">Look Now</a>
-              </div>
-            </div>
-    
-    
-            <div class="card col-11 col-md-5 col-lg-4 col-xl-3 wrap m-2 p-0">
-                <a href="https://mattred1.github.io/study/unit7/13MuseumOfCandy/Final/index.html" target="_blank"><img src="imgs/candy-big.jpg" class="card-img-top" alt="Candy Museum website"></a>
-              <div class="card-body">
-                <h5 class="card-title">Candy Museum</h5>
-                <p class="card-text">Just a fun Bootstrap site that doesn't look like a normal Bootstrap site. <br><em>Ft. Bootstrap</em></p>
-                <a href="https://mattred1.github.io/study/unit7/13MuseumOfCandy/Final/index.html" target="_blank" class="btn zoom btn-secondary active" role="button" aria-pressed="true">Look Now</a>
-              </div>
-            </div>
-    
-    
-            <div class="card col-11 col-md-5 col-lg-4 col-xl-3 wrap m-2 p-0">
-                <a href="https://mattred1.github.io/study/unit16/scores.html" target="_blank"><img src="imgs/scores-big.jpg" class="card-img-top" alt="Scorekeeper website"></a>
-              <div class="card-body">
-                <h5 class="card-title">Scorekeeper</h5>
-                <p class="card-text">Have you ever wanted to keep score playing a friend in rock paper scissors? Me neither, but here's something to use in case it does.<br><em>Ft. Vanilla JS, Bulma</em></p>
-                <a href="https://mattred1.github.io/study/unit16/scores.html" target="_blank" class="btn zoom btn-secondary active" role="button" aria-pressed="true">Look Now</a>
-              </div>
-            </div>
-    
-    
-            <div class="card col-11 col-md-5 col-lg-4 col-xl-3 wrap m-2 p-0">
-                <a href="https://mattred1.github.io/random-excuse-generator" target="_blank"><img src="imgs/excuse-big.jpg" class="card-img-top" alt="Random excuse generator website"></a>
-              <div class="card-body">
-                <h5 class="card-title">Random Excuse Generator</h5>
-                <p class="card-text">Looking for an excuse to use to get out of going to that party? I got you, fam. <br><em>Ft. Vanilla JS</em></p>
-                <a href="https://mattred1.github.io/random-excuse-generator" target="_blank" class="btn zoom btn-secondary active" role="button" aria-pressed="true">Look Now</a>
-              </div>
-            </div>
-    
-    
-            <div class="card col-11 col-md-5 col-lg-4 col-xl-3 wrap m-2 p-0">
-                <a href="https://mattred1.github.io/study/unit20/index.html" target="_blank"><img src="imgs/todo-list.jpg" class="card-img-top" alt="To do list website"></a>
-              <div class="card-body">
-                <h5 class="card-title">To Do List</h5>
-                <p class="card-text">When you need to organize your tasks, like saving all wizard-kind <br><em>Ft. jQuery</em></p>
-                <a href="https://mattred1.github.io/study/unit20/index.html" target="_blank" class="btn zoom btn-secondary active" role="button" aria-pressed="true">Look Now</a>
-              </div>
-            </div>
-    
+    <section>
+        <h2 class="text-center mb-5">Projects</h2>
 
-            <div class="card col-11 col-md-5 col-lg-4 col-xl-3 wrap m-2 p-0">
-                <a href="https://mattred1.github.io/study/unit25/forms/index.html" target="_blank" ><img src="imgs/tweet-big.jpg" class="card-img-top" alt="Spain website"></a>
-              <div class="card-body">
-                <h5 class="card-title">Playing with forms</h5>
-                <p class="card-text">I wanted to practice using JavaScript to pause a form's default action and with using append <br><em>Ft. Vanilla JS</em></p>
-                <a href="https://mattred1.github.io/study/unit25/forms/index.html" target="_blank" class="btn zoom btn-secondary active" role="button" aria-pressed="true">Look Now</a>
-              </div>
-            </div>
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-center">
 
+                <div class="card col-11 col-md-5 col-lg-4 col-xl-3 wrap m-2 p-0">
+                    <a href="https://mattred1.github.io/wedding/" target="_blank"><img src="imgs/wedding-big.jpg" class="card-img-top img-fluid" alt="Wedding website"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">My Wedding</h5>
+                        <p class="card-text">I thought it would be fun to build my own wedding website as one of my first big projects! I was right. <br><em>Ft. Bootstrap</em></p>
+                        <a href="https://mattred1.github.io/wedding/" target="_blank" class="btn zoom btn-secondary active" role="button" aria-pressed="true">Look Now</a>
+                    </div>
+                </div>
+
+
+                <div class="card col-11 col-md-5 col-lg-4 col-xl-3 wrap m-2 p-0">
+                    <a href="https://mattred1.github.io/itinerary/" target="_blank"><img src="imgs/spain-big.jpg" class="card-img-top" alt="Spain website"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">To Spain and Beyond!</h5>
+                        <p class="card-text">I decided to journal my trip to Spain. <br><em>Ft. Bootstrap</em></p>
+                        <a href="https://mattred1.github.io/itinerary/" target="_blank" class="btn zoom btn-secondary active" role="button" aria-pressed="true">Look Now</a>
+                    </div>
+                </div>
+
+
+                <div class="card col-11 col-md-5 col-lg-4 col-xl-3 wrap m-2 p-0">
+                    <a href="https://mattred1.github.io/study/unit7/13MuseumOfCandy/Final/index.html" target="_blank"><img src="imgs/candy-big.jpg" class="card-img-top" alt="Candy Museum website"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Candy Museum</h5>
+                        <p class="card-text">Just a fun Bootstrap site that doesn't look like a normal Bootstrap site. <br><em>Ft. Bootstrap</em></p>
+                        <a href="https://mattred1.github.io/study/unit7/13MuseumOfCandy/Final/index.html" target="_blank" class="btn zoom btn-secondary active" role="button" aria-pressed="true">Look Now</a>
+                    </div>
+                </div>
+
+
+                <div class="card col-11 col-md-5 col-lg-4 col-xl-3 wrap m-2 p-0">
+                    <a href="https://mattred1.github.io/study/unit16/scores.html" target="_blank"><img src="imgs/scores-big.jpg" class="card-img-top" alt="Scorekeeper website"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Scorekeeper</h5>
+                        <p class="card-text">Have you ever wanted to keep score playing a friend in rock paper scissors? Me neither, but here's something to use in case it does.<br><em>Ft. Vanilla JS, Bulma</em></p>
+                        <a href="https://mattred1.github.io/study/unit16/scores.html" target="_blank" class="btn zoom btn-secondary active" role="button" aria-pressed="true">Look Now</a>
+                    </div>
+                </div>
+
+
+                <div class="card col-11 col-md-5 col-lg-4 col-xl-3 wrap m-2 p-0">
+                    <a href="https://mattred1.github.io/random-excuse-generator" target="_blank"><img src="imgs/excuse-big.jpg" class="card-img-top" alt="Random excuse generator website"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Random Excuse Generator</h5>
+                        <p class="card-text">Looking for an excuse to use to get out of going to that party? I got you, fam. <br><em>Ft. Vanilla JS</em></p>
+                        <a href="https://mattred1.github.io/random-excuse-generator" target="_blank" class="btn zoom btn-secondary active" role="button" aria-pressed="true">Look Now</a>
+                    </div>
+                </div>
+
+
+                <div class="card col-11 col-md-5 col-lg-4 col-xl-3 wrap m-2 p-0">
+                    <a href="https://mattred1.github.io/study/unit20/index.html" target="_blank"><img src="imgs/todo-list.jpg" class="card-img-top" alt="To do list website"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">To Do List</h5>
+                        <p class="card-text">When you need to organize your tasks, like saving all wizard-kind <br><em>Ft. jQuery</em></p>
+                        <a href="https://mattred1.github.io/study/unit20/index.html" target="_blank" class="btn zoom btn-secondary active" role="button" aria-pressed="true">Look Now</a>
+                    </div>
+                </div>
+
+
+                <div class="card col-11 col-md-5 col-lg-4 col-xl-3 wrap m-2 p-0">
+                    <a href="https://mattred1.github.io/study/unit25/forms/index.html" target="_blank"><img src="imgs/tweet-big.jpg" class="card-img-top" alt="Tweet form"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Playing with forms</h5>
+                        <p class="card-text">I wanted to practice using JavaScript to pause a form's default action and with using append <br><em>Ft. Vanilla JS</em></p>
+                        <a href="https://mattred1.github.io/study/unit25/forms/index.html" target="_blank" class="btn zoom btn-secondary active" role="button" aria-pressed="true">Look Now</a>
+                    </div>
+                </div>
+
+                <div class="card col-11 col-md-5 col-lg-4 col-xl-3 wrap m-2 p-0">
+                    <a href="https://mattred1.github.io/apis" target="_blank"><img src="imgs/api-recipe-finder.jpg" class="card-img-top" alt="Recipe finder"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Recipe finder</h5>
+                        <p class="card-text">I didn't know what to pick for dinner one night, so I decided to make an app that would help <br><em>Ft. JavaScript, Axios API, AJAX</em></p>
+                        <a href="https://mattred1.github.io/apis" target="_blank" class="btn zoom btn-secondary active" role="button" aria-pressed="true">Look Now</a>
+                    </div>
+                </div>
+
+            </div>
         </div>
-    </div>
 
-</section>  
-
-
-      
+    </section>
 
 
-<hr class="top-hr" id="contact">
+
+
+
+    <hr class="top-hr" id="contact">
 
     <section class="container mb-5">
         <h2 class="text-center mb-5">Reach out</h2>
@@ -262,16 +277,11 @@
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-        <script src="dist/scripts/scripts.js" async defer></script>
-    </body>
+    <script src="dist/scripts/scripts.js" async defer></script>
+</body>
+
 </html>
