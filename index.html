@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en" color-mode="dark">
 
 <head>
     <meta charset="utf-8">
@@ -12,6 +13,10 @@
 
     <!-- Google font links -->
     <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheet">
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Basic:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,200;0,400;0,700;0,900;1,200;1,400;1,700;1,900&display=swap" rel="stylesheet"> -->
 
     <!-- Bootstrap 4.4.1  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -31,10 +36,23 @@
 
     <!-- Start nav -->
     <nav id="mainNavbar" class="navbar navbar-expand-md sticky-top">
+
+        <!--- Light mode button --->
+        <!-- <button class="p-1 rounded-circle zoom color-mode__btn light--hidden" aria-label="Toggle light mode">
+            <i class="fa-solid fa-sun fa-spin fa-2x" style="--fa-animation-duration: 2s; --fa-animation-iteration-count: 3;--fa-animation-timing: ease-in-out;"></i>
+        </button> -->
+
+        <!--- Dark mode button --->
+        <!-- <button class="p-1 rounded-circle zoom color-mode__btn dark--hidden" aria-label="Toggle dark mode">
+            <i class="fa-solid fa-moon fa-spin fa-2x" style="--fa-animation-duration: 2s; --fa-animation-iteration-count: 3;--fa-animation-timing: ease-in-out;"></i>
+        </button> -->
+
         <a class="navbar-brand"><button class="justify-content-end zoom" type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">🌛</button></a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
+
         <div class="collapse navbar-collapse" id="navLinks">
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -260,9 +278,9 @@
         <h2 class="text-center mb-5">Reach out</h2>
 
         <div class="d-flex justify-content-around">
-            <a href="https://www.linkedin.com/in/mredinger/" target="_blank"><i class="fab fa-linkedin-in fa-3x "></i></a>
-            <a href="mailto:email.mredinger@gmail.com"><i class="fas fa-at fa-3x "></i></a>
-            <a href="https://github.com/mattred1" target="_blank"><i class="fab fa-github fa-3x "></i></a>
+            <a href="https://www.linkedin.com/in/mredinger/" target="_blank"><i class="fa-brands fa-linkedin-in fa-3x zoom"></i></a>
+            <a href="mailto:email.mredinger@gmail.com"><i class="fa-solid fa-at fa-3x zoom"></i></a>
+            <a href="https://github.com/mattred1" target="_blank"><i class="fa-brands fa-github-alt fa-3x zoom"></i></a>
         </div>
     </section>
 
@@ -281,7 +299,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-    <script src="dist/scripts/scripts.js" async defer></script>
+    <script src="scripts/scripts.js" async defer></script>
 </body>
 
 </html>
