@@ -1,25 +1,58 @@
-$dark-color: #24292D;
-$light-color: #F1F7F8;
+// **Once in portfolio directory** Compile using:
+// sass --watch scss/styles.scss dist/css/styles.css
+// Ctrl-C to stop
+
+// Universal
+:root {
+    --ff-title: "Gentium Basic", serif;
+    --ff-body: "Raleway", sans-serif;
+    --ff-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+    &[color-mode="light"] {
+        --bg: hsl(198, 10%, 90%);
+        --text: hsl(198, 10%, 10%);
+        --primary: hsl(198, 62%, 72%);
+        --secondary: hsl(139, 62%, 72%);
+        --tertiary: hsl(353, 62%, 72%);
+    }
+
+    &[color-mode="dark"] {
+        --bg: hsl(198, 10%, 10%);
+        --text: hsl(198, 10%, 90%);
+        --primary: hsl(198, 62%, 72%);
+        --secondary: hsl(139, 62%, 72%);
+        --tertiary: hsl(353, 62%, 72%);
+    }
+}
+
+$dark-color: #24292d;
+$light-color: #f1f7f8;
 $pink-color: #ef476f;
 $blue-color: #007dff;
-$gray-color:#c6c6c6;
+$gray-color: #c6c6c6;
 $floral-color: #a288e3;
 
+/* Any element with the class "light--hidden" will be hidden when the site is set to Light Mode */
+:root[color-mode="light"] .light--hidden {
+    display: none;
+}
 
+/* Any element with the class "dark--hidden" will be hidden when the site is set to Dark Mode */
+:root[color-mode="dark"] .dark--hidden {
+    display: none;
+}
 
 html {
     scroll-behavior: smooth;
 }
-
-
 
 body {
     background-color: $dark-color;
     color: $light-color;
     overflow-x: hidden;
 }
-
-
 
 // Start light mode classes
 .light-mode {
@@ -66,8 +99,6 @@ body {
 }
 // End light mode classes
 
-
-
 a {
     color: $blue-color;
     text-decoration: none;
@@ -78,8 +109,6 @@ a {
     }
 }
 
-
-
 button,
 .btn {
     background-color: $light-color;
@@ -89,8 +118,6 @@ button,
         color: $pink-color;
     }
 }
-
-
 
 hr {
     height: 25vh;
@@ -103,11 +130,9 @@ hr {
     position: relative;
 }
 
-
-
 #intro {
     .cursive {
-        font-family: 'Vast Shadow', cursive;
+        font-family: "Vast Shadow", cursive;
     }
 }
 
@@ -130,7 +155,6 @@ hr {
         list-style-type: none;
         font-weight: 900;
 
-
         // Start  transfrom/transition for fancy nav underline
         a {
             margin: 0 10px;
@@ -139,7 +163,7 @@ hr {
             &:before {
                 position: absolute;
                 bottom: -2px;
-                content: '';
+                content: "";
                 width: 80%;
                 height: 3px;
                 background: $light-color;
@@ -157,8 +181,6 @@ hr {
         }
     }
 }
-
-
 
 // Start mobile navbar transition from hamburger menu to "X" menu
 .navbar-toggler-icon {
@@ -178,7 +200,7 @@ hr {
     background-color: #000;
     top: 0;
     left: 0;
-    content: '';
+    content: "";
     z-index: 2;
     transition: all 300ms linear;
 }
@@ -200,8 +222,6 @@ hr {
 }
 // End mobile navbar transition from hamburger menu to "X" menu
 
-
-
 // Start properties to display on navbar when scrolling down
 .scrolled {
     transition: background-color 1s ease-in-out;
@@ -212,7 +232,7 @@ hr {
 
     a {
         color: $blue-color;
-        
+
         &:before {
             background: $blue-color !important;
         }
@@ -220,24 +240,20 @@ hr {
 }
 // End properties to display on navbar when scrolling down
 
-
-
 // Start zoom in on buttons projects
 .zoom {
-    transition: transform .2s;
+    transition: transform 0.2s;
 
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.2);
     }
 }
 // End zoom in on buttons projects
 
-
-
 //Start hover transform/transition for porftolio cards
 .card {
-    transform:
-        perspective(750px) translate3d(0px, 0px, -250px) rotateX(27deg) scale(0.9, 0.9);
+    transform: perspective(750px) translate3d(0px, 0px, -250px) rotateX(27deg)
+        scale(0.9, 0.9);
     box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
     transition: 0.4s ease-in-out transform;
     -webkit-transition: 0.4s ease-in-out transform;

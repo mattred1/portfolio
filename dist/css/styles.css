@@ -1,36 +1,68 @@
+:root {
+  --ff-title: "Gentium Basic", serif;
+  --ff-body: "Raleway", sans-serif;
+  --ff-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+:root[color-mode=light] {
+  --bg: hsl(198, 10%, 90%);
+  --text: hsl(198, 10%, 10%);
+  --primary: hsl(198, 62%, 72%);
+  --secondary: hsl(139, 62%, 72%);
+  --tertiary: hsl(353, 62%, 72%);
+}
+:root[color-mode=dark] {
+  --bg: hsl(198, 10%, 10%);
+  --text: hsl(198, 10%, 90%);
+  --primary: hsl(198, 62%, 72%);
+  --secondary: hsl(139, 62%, 72%);
+  --tertiary: hsl(353, 62%, 72%);
+}
+
+/* Any element with the class "light--hidden" will be hidden when the site is set to Light Mode */
+:root[color-mode=light] .light--hidden {
+  display: none;
+}
+
+/* Any element with the class "dark--hidden" will be hidden when the site is set to Dark Mode */
+:root[color-mode=dark] .dark--hidden {
+  display: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: #24292D;
-  color: #F1F7F8;
+  background-color: #24292d;
+  color: #f1f7f8;
   overflow-x: hidden;
 }
 
 .light-mode {
-  background-color: #F1F7F8;
-  color: #24292D;
+  background-color: #f1f7f8;
+  color: #24292d;
 }
 .light-mode a {
   color: #007dff;
 }
 .light-mode button {
-  background-color: #24292D;
-  color: #F1F7F8;
+  background-color: #24292d;
+  color: #f1f7f8;
 }
 .light-mode .card {
-  border: 1px solid #24292D;
+  border: 1px solid #24292d;
 }
 .light-mode .scrolled {
-  background-color: #24292D;
+  background-color: #24292d;
 }
 .light-mode hr {
   background: #007dff;
 }
 .light-mode #mainNavbar .navbar-toggler {
-  background-color: #F1F7F8;
-  color: #24292D;
+  background-color: #f1f7f8;
+  color: #24292d;
   border: 1px solid #ef476f;
 }
 .light-mode #mainNavbar ul a:before {
@@ -48,8 +80,8 @@ a:hover {
 
 button,
 .btn {
-  background-color: #F1F7F8;
-  color: #24292D;
+  background-color: #f1f7f8;
+  color: #24292d;
 }
 button:hover,
 .btn:hover {
@@ -73,7 +105,7 @@ hr {
 
 #mainNavbar .navbar-toggler {
   background-color: #ef476f;
-  color: #F1F7F8;
+  color: #f1f7f8;
 }
 #mainNavbar .navbar-brand button {
   border-radius: 50%;
@@ -95,7 +127,7 @@ hr {
   content: "";
   width: 80%;
   height: 3px;
-  background: #F1F7F8;
+  background: #f1f7f8;
   transform: translateX(-100%);
   opacity: 0;
 }
@@ -148,7 +180,7 @@ hr {
   -webkit-transition: background-color 1s ease-in-out;
   -moz-transition: background-color 1s easeease-in-out;
   -o-transition: background-color 1s ease-in-out;
-  background: #F1F7F8;
+  background: #f1f7f8;
 }
 .scrolled a {
   color: #007dff;
@@ -161,7 +193,7 @@ hr {
   transition: transform 0.2s;
 }
 .zoom:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .card {
@@ -174,8 +206,10 @@ hr {
   border: none;
 }
 .card .card-body {
-  color: #24292D;
+  color: #24292d;
 }
 .card:hover {
   transform: translate3d(0px, 0px, -250px);
 }
+
+/*# sourceMappingURL=styles.css.map */
