@@ -11,6 +11,10 @@
   --primary: hsl(198, 62%, 72%);
   --secondary: hsl(139, 62%, 72%);
   --tertiary: hsl(353, 62%, 72%);
+  /* Any element with the class "light--hidden" will be hidden when the site is set to Light Mode */
+}
+:root[color-mode=light] .light--hidden {
+  display: none;
 }
 :root[color-mode=dark] {
   --bg: hsl(198, 10%, 10%);
@@ -18,14 +22,8 @@
   --primary: hsl(198, 62%, 72%);
   --secondary: hsl(139, 62%, 72%);
   --tertiary: hsl(353, 62%, 72%);
+  /* Any element with the class "dark--hidden" will be hidden when the site is set to Dark Mode */
 }
-
-/* Any element with the class "light--hidden" will be hidden when the site is set to Light Mode */
-:root[color-mode=light] .light--hidden {
-  display: none;
-}
-
-/* Any element with the class "dark--hidden" will be hidden when the site is set to Dark Mode */
 :root[color-mode=dark] .dark--hidden {
   display: none;
 }
@@ -178,7 +176,7 @@ hr {
 .scrolled {
   transition: background-color 1s ease-in-out;
   -webkit-transition: background-color 1s ease-in-out;
-  -moz-transition: background-color 1s easeease-in-out;
+  -moz-transition: background-color 1s ease-in-out;
   -o-transition: background-color 1s ease-in-out;
   background: #f1f7f8;
 }

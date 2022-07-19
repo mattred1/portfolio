@@ -1,0 +1,41 @@
+// Universal
+:root {
+    --ff-title: "Gentium Basic", serif;
+    --ff-body: "Raleway", sans-serif;
+    --ff-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+    &[color-mode="light"] {
+        --bg: hsl(198, 10%, 90%);
+        --text: hsl(198, 10%, 10%);
+        --primary: hsl(198, 62%, 72%);
+        --secondary: hsl(139, 62%, 72%);
+        --tertiary: hsl(353, 62%, 72%);
+
+        /* Any element with the class "light--hidden" will be hidden when the site is set to Light Mode */
+        .light--hidden {
+            display: none;
+        }
+    }
+
+    &[color-mode="dark"] {
+        --bg: hsl(198, 10%, 10%);
+        --text: hsl(198, 10%, 90%);
+        --primary: hsl(198, 62%, 72%);
+        --secondary: hsl(139, 62%, 72%);
+        --tertiary: hsl(353, 62%, 72%);
+
+        /* Any element with the class "dark--hidden" will be hidden when the site is set to Dark Mode */
+        .dark--hidden {
+            display: none;
+        }
+    }
+}
+
+$dark-color: #24292d;
+$light-color: #f1f7f8;
+$pink-color: #ef476f;
+$blue-color: #007dff;
+$gray-color: #c6c6c6;
+$floral-color: #a288e3;

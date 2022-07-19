@@ -1,97 +1,57 @@
+@use "./variables";
+
 // **Once in portfolio directory** Compile using:
-// sass --watch scss/styles.scss dist/css/styles.css
+// sass --watch scss/main.scss dist/css/styles.css
 // Ctrl-C to stop
-
-// Universal
-:root {
-    --ff-title: "Gentium Basic", serif;
-    --ff-body: "Raleway", sans-serif;
-    --ff-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-
-    &[color-mode="light"] {
-        --bg: hsl(198, 10%, 90%);
-        --text: hsl(198, 10%, 10%);
-        --primary: hsl(198, 62%, 72%);
-        --secondary: hsl(139, 62%, 72%);
-        --tertiary: hsl(353, 62%, 72%);
-    }
-
-    &[color-mode="dark"] {
-        --bg: hsl(198, 10%, 10%);
-        --text: hsl(198, 10%, 90%);
-        --primary: hsl(198, 62%, 72%);
-        --secondary: hsl(139, 62%, 72%);
-        --tertiary: hsl(353, 62%, 72%);
-    }
-}
-
-$dark-color: #24292d;
-$light-color: #f1f7f8;
-$pink-color: #ef476f;
-$blue-color: #007dff;
-$gray-color: #c6c6c6;
-$floral-color: #a288e3;
-
-/* Any element with the class "light--hidden" will be hidden when the site is set to Light Mode */
-:root[color-mode="light"] .light--hidden {
-    display: none;
-}
-
-/* Any element with the class "dark--hidden" will be hidden when the site is set to Dark Mode */
-:root[color-mode="dark"] .dark--hidden {
-    display: none;
-}
 
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: $dark-color;
-    color: $light-color;
+    background-color: variables.$dark-color;
+    color: variables.$light-color;
     overflow-x: hidden;
 }
 
 // Start light mode classes
 .light-mode {
-    background-color: $light-color;
-    color: $dark-color;
+    background-color: variables.$light-color;
+    color: variables.$dark-color;
     // transition: 400ms; -- would only slow transition when switching from dark to light, not light to dark
 
     a {
-        color: $blue-color;
+        color: variables.$blue-color;
     }
 
     button {
-        background-color: $dark-color;
-        color: $light-color;
+        background-color: variables.$dark-color;
+        color: variables.$light-color;
     }
 
     .card {
-        border: 1px solid $dark-color;
+        border: 1px solid variables.$dark-color;
     }
 
     .scrolled {
-        background-color: $dark-color;
+        background-color: variables.$dark-color;
     }
 
     hr {
-        background: $blue-color;
+        background: variables.$blue-color;
     }
 
     #mainNavbar {
         .navbar-toggler {
-            background-color: $light-color;
-            color: $dark-color;
-            border: 1px solid $pink-color;
+            background-color: variables.$light-color;
+            color: variables.$dark-color;
+            border: 1px solid variables.$pink-color;
         }
 
         ul {
             a {
                 &:before {
-                    background: $blue-color;
+                    background: variables.$blue-color;
                 }
             }
         }
@@ -100,28 +60,28 @@ body {
 // End light mode classes
 
 a {
-    color: $blue-color;
+    color: variables.$blue-color;
     text-decoration: none;
 
     &:hover {
         text-decoration: overline;
-        color: $blue-color;
+        color: variables.$blue-color;
     }
 }
 
 button,
 .btn {
-    background-color: $light-color;
-    color: $dark-color;
+    background-color: variables.$light-color;
+    color: variables.$dark-color;
 
     &:hover {
-        color: $pink-color;
+        color: variables.$pink-color;
     }
 }
 
 hr {
     height: 25vh;
-    background: $pink-color;
+    background: variables.$pink-color;
     margin-top: 6rem;
     margin-bottom: 6rem;
     width: 100%;
@@ -138,8 +98,8 @@ hr {
 
 #mainNavbar {
     .navbar-toggler {
-        background-color: $pink-color;
-        color: $light-color;
+        background-color: variables.$pink-color;
+        color: variables.$light-color;
     }
 
     .navbar-brand {
@@ -166,7 +126,7 @@ hr {
                 content: "";
                 width: 80%;
                 height: 3px;
-                background: $light-color;
+                background: variables.$light-color;
                 transform: translateX(-100%);
                 opacity: 0;
             }
@@ -226,15 +186,15 @@ hr {
 .scrolled {
     transition: background-color 1s ease-in-out;
     -webkit-transition: background-color 1s ease-in-out;
-    -moz-transition: background-color 1s easeease-in-out;
+    -moz-transition: background-color 1s ease-in-out;
     -o-transition: background-color 1s ease-in-out;
-    background: $light-color;
+    background: variables.$light-color;
 
     a {
-        color: $blue-color;
+        color: variables.$blue-color;
 
         &:before {
-            background: $blue-color !important;
+            background: variables.$blue-color !important;
         }
     }
 }
@@ -263,7 +223,7 @@ hr {
     border: none;
 
     .card-body {
-        color: $dark-color;
+        color: variables.$dark-color;
     }
 
     &:hover {
