@@ -12,11 +12,11 @@
     <link rel="shortcut icon" href="imgs/code-solid.ico">
 
     <!-- Google font links -->
-    <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheet"> -->
 
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gentium+Basic:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,200;0,400;0,700;0,900;1,200;1,400;1,700;1,900&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Basic:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,200;0,400;0,700;0,900;1,200;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
     <!-- Bootstrap 4.4.1  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -38,22 +38,24 @@
     <nav id="mainNavbar" class="navbar navbar-expand-md sticky-top">
 
         <!--- Light mode button --->
-        <!-- <button class="p-1 rounded-circle zoom color-mode__btn light--hidden" aria-label="Toggle light mode">
-            <i class="fa-solid fa-sun fa-spin fa-2x" style="--fa-animation-duration: 2s; --fa-animation-iteration-count: 3;--fa-animation-timing: ease-in-out;"></i>
-        </button> -->
+        <button class="p-1 rounded-circle zoom color-mode__btn light--hidden" aria-label="Toggle light mode">
+            <i class="fa-solid fa-sun fa-spin fa-2x" style="--fa-animation-duration: 2s; --fa-animation-iteration-count: 1;--fa-animation-timing: ease-in-out;"></i>
+        </button>
 
         <!--- Dark mode button --->
-        <!-- <button class="p-1 rounded-circle zoom color-mode__btn dark--hidden" aria-label="Toggle dark mode">
-            <i class="fa-solid fa-moon fa-spin fa-2x" style="--fa-animation-duration: 2s; --fa-animation-iteration-count: 3;--fa-animation-timing: ease-in-out;"></i>
-        </button> -->
+        <button class="p-1 rounded-circle zoom color-mode__btn dark--hidden" aria-label="Toggle dark mode">
+            <i class="fa-solid fa-moon fa-spin fa-2x" style="--fa-animation-duration: 2s; --fa-animation-iteration-count: 1;--fa-animation-timing: ease-in-out;"></i>
+        </button>
 
-        <a class="navbar-brand"><button class="justify-content-end zoom" type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">🌛</button></a>
+        <!-- <a class="navbar-brand"><button class="justify-content-end zoom" type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">🌛</button></a>-->
+
+        <!-- Hamburger menu on mobile -->
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
 
-        <div class="collapse navbar-collapse" id="navLinks">
+        <div class="collapse navbar-collapse ff-system" id="navLinks">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a href="#intro" class="nav-link">HOME</a>
@@ -63,6 +65,9 @@
                 </li>
                 <li class="nav-item">
                     <a href="#background" class="nav-link">BACKGROUND</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">SKILLS</a>
                 </li>
                 <li class="nav-item">
                     <a href="#projects" class="nav-link">PROJECTS</a>
@@ -78,93 +83,56 @@
 
 
     <section id="intro" class="container-fluid mb-4">
-        <div class="row align-items-center">
-            <div class="col-lg-12">
-                <div class="text-center mt-5">
-                    <h1 class="cursive display-3 mb-5">Matt is <button class="mb-3 btn-lg btn zoom" onclick="document.getElementById('whoAmI').innerHTML = nextWord();">...</button></h1>
 
-                    <h2 class="cursive" id="whoAmI"></h2>
-                </div>
-            </div>
-            <!-- <div class="col-lg-4 d-none d-lg-block px-0">
+
+        <div class="text-center mt-5 ff-title px-1">
+            <h1 class="display-1 font-weight-bolder" style="line-height:1;">Matt is <button class="btn-lg btn zoom" onclick="document.getElementById('whoAmI').innerHTML = nextWord();">...</button></h1>
+
+            <h1 class="display-4 font-weight-bolder" id="whoAmI"></h1>
+        </div>
+
+        <!-- <div class="col-lg-4 d-none d-lg-block px-0">
                 <img class="img-fluid" src="imgs/selfie.jpg" alt="Selfie">
             </div> -->
-        </div>
-    </section>
-
-
-
-    <hr class="top-hr" id="about">
-
-
-
-    <section class="container">
-        <h2 class="text-center mb-5">About Me</h2>
-        <p class="text-center lead">After graduating from UMBC with a degree in psychology, I took a front-end web development course, and transitioned my career into the marketing field because I was fascinated by the psychology of user engagement and design. I now pride myself on being thorougly involved in the life of a customer journey, working with both email and web development and design. My passion is learning new technologies and being able to apply them in an interesting way.</p>
 
     </section>
 
 
-    <hr class="top-hr" id="background">
 
-    <section class="container mb-4">
-        <h2 class="text-center mb-5">Background and Skills</h2>
+    <hr class="top-hr">
+
+
+
+    <section id="about" class="container">
+        <h2 class="h1 text-center ff-title font-weight-bold mb-3">About Me</h2>
+        <p class="text-center">After graduating from UMBC with a degree in psychology, I took a front-end web development course, and transitioned my career into the marketing field because I was fascinated by the psychology of user engagement and&nbsp;design.</p>
+
+        <p class="text-center">I now pride myself on being thorougly involved in the life of a customer journey, working with both email and web development and&nbsp;design.</p>
+
+        <p class="text-center">My passion is learning new technologies and being able to apply them in an interesting&nbsp;way.</p>
+
+    </section>
+
+
+    <hr class="top-hr">
+
+    <section id="background" class="container mb-4">
+        <h2 class="h1 text-center ff-title font-weight-bold mb-3">Background</h2>
 
         <div class="d-flex flex-column flex-md-row justify-content-center">
             <div class="mb-3 px-2">
-                <h3 class="text-center mb-3">What you should know:</h3>
+                <h3 class="text-center mb-3 ff-title">What you should know:</h3>
 
-                <p class="h4 mb-0"><span class="h3 mr-3">2015</span> Graduated from <a href="https://betamore.com/" target="_blank">Betamore</a></p>
+                <p class="h4 mb-0"><span class="h3 mr-3 d-block d-md-inline-block text-center text-md-left ">2015</span> Graduated from&nbsp;<a href="https://betamore.com/" target="_blank">Betamore</a></p>
                 <p><em>I successfully founded and ran a meetup group, called jrWebDev, to create a forum for new&nbsp;coders.</em></p>
 
-                <p class="h4 mb-0"><span class="h3 mr-3">2017</span> Started at Agora Financial (Now Consilience)</p>
+                <p class="h4 mb-0"><span class="h3 mr-3">2017</span> Started at Agora Financial (Now&nbsp;Consilience)</p>
                 <p class="mb-1"><em>I started there as an Email Production Specialist, focusing on developing and designing Three Founders Publishing newsletters.</em></p>
                 <p><em>In 2019, I was promoted to Senior Email Developer, leading a team of Email Production&nbsp;Specialists.</em></p>
 
-                <p class="h4 mb-0"><span class="h3 mr-3">2021</span> Started at Legacy Research Group</p>
+                <p class="h4 mb-0"><span class="h3 mr-3">2021</span> Started at Legacy Research&nbsp;Group</p>
                 <p><em>My role as a developer and designer allowed me to learn more about Salesforce journeys and enhance a lot of my&nbsp;skills.</em></p>
 
-                <!-- <ul>
-                    <li><a href="https://betamore.com/" target="_blank">Betamore</a> grad in 2015</li>
-                    <ul>
-                        <li>Successfully founded and ran meetup group (jrWebDev) to create a forum for new coders</li>
-                    </ul>
-                    <li>Started at Agora Financial as an Email Production Specialist in Summer 2017</li>
-                    <ul>
-                        <li>Promoted to Senior Email Developer in Winter 2019</li>
-                    </ul>
-                    <li>Completely revamped team workflow to speed up processes</li>
-                </ul> -->
-            </div>
-
-            <div class="mb-2">
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Sass & SCSS</li>
-                    <li>JavaScript</li>
-                    <li>jQuery</li>
-                    <li>SQL</li>
-                    <li>PHP</li>
-                    <li>APIs</li>
-                    <li>AJAX</li>
-                    <li>Git</li>
-                    <li>Bootstrap</li>
-                </ul>
-            </div>
-            <div class="mb-2">
-                <ul>
-                    <li>WordPress</li>
-                    <li>Jira</li>
-                    <li>Confluence</li>
-                    <li>Salesforce</li>
-                    <li>Responsive design</li>
-                    <li>UI design</li>
-                    <li>Adobe Photoshop</li>
-                    <li>Adobe Illustrator</li>
-                    <li>Email Deliverability</li>
-
-                </ul>
 
             </div>
         </div>
@@ -173,14 +141,55 @@
 
 
 
+    <hr class="top-hr">
+
+    <section id="skills" class="container mb-4">
+        <h2 class="h1 text-center ff-title font-weight-bold mb-3">Skills</h2>
 
 
-    <hr class="top-hr" id="projects">
+        <div class="row mt-4 mb-2 mx-auto text-center" style="max-width: 800px;">
+            <div class="col-md-4 col-6 mx-auto">
+                <p class="mb-1">HTML</p>
+                <p class="mb-1">CSS</p>
+                <p class="mb-1">SCSS</p>
+                <p class="mb-1">Sass</p>
+                <p class="mb-1">jQuery</p>
+                <p class="mb-1">JavaScript</p>
+                <p class="mb-1">Bootstrap</p>
+            </div>
+            <div class="col-md-4 col-6 mx-auto">
+                <p class="mb-1">Git</p>
+                <p class="mb-1">SQL</p>
+                <p class="mb-1">PHP</p>
+                <p class="mb-1">APIs</p>
+                <p class="mb-1">AJAX</p>
+                <p class="mb-1">UI design</p>
+                <p class="mb-1">Responsive design</p>
+            </div>
+            <div class="col-md-4 col-6 mx-auto pt-4 pt-md-0">
+                <p class="mb-1">WordPress</p>
+                <p class="mb-1">Jira</p>
+                <p class="mb-1">Confluence</p>
+                <p class="mb-1">Salesforce</p>
+                <p class="mb-1">Adobe Photoshop</p>
+                <p class="mb-1">Adobe Illustrator</p>
+                <p class="mb-1">Email Deliverability</p>
+            </div>
+        </div>
+
+
+    </section>
 
 
 
-    <section>
-        <h2 class="text-center mb-5">Projects</h2>
+
+
+    <hr class="top-hr">
+
+
+
+    <section id="projects" class="container mb-4">
+        <h2 class="h1 text-center ff-title font-weight-bold mb-3">Projects</h2>
 
         <div class="container">
             <div class="d-flex flex-wrap justify-content-center">
@@ -272,15 +281,16 @@
 
 
 
-    <hr class="top-hr" id="contact">
+    <hr class="top-hr">
 
-    <section class="container mb-5">
-        <h2 class="text-center mb-5">Reach out</h2>
+    <section id="contact" class="container pb-5">
+        <h2 class="h1 text-center ff-title font-weight-bold pb-5">Reach out</h2>
 
         <div class="d-flex justify-content-around">
-            <a href="https://www.linkedin.com/in/mredinger/" target="_blank"><i class="fa-brands fa-linkedin-in fa-3x zoom"></i></a>
-            <a href="mailto:email.mredinger@gmail.com"><i class="fa-solid fa-at fa-3x zoom"></i></a>
-            <a href="https://github.com/mattred1" target="_blank"><i class="fa-brands fa-github-alt fa-3x zoom"></i></a>
+            <a href="https://www.linkedin.com/in/mredinger/" target="_blank"><i title="LinkedIn link" class="fa-brands fa-linkedin-in fa-3x zoom"></i></a>
+            <a href="mailto:email.mredinger@gmail.com"><i title="Mailto email link email.mredinger@gmail.com" class="fa-solid fa-at fa-3x zoom"></i></a>
+            <a href="https://docs.google.com/document/d/1vk4ehDcpzsYUaM0bHPN4e4Wmoc4HmhuQsIlDsTg5jN4/edit?usp=sharing"><i title="Resume link" class="fa-regular fa-file-lines fa-3x zoom"></i></a>
+            <a href="https://github.com/mattred1" target="_blank"><i title="GitHub link" class="fa-brands fa-github-alt fa-3x zoom"></i></a>
         </div>
     </section>
 
