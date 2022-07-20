@@ -1,63 +1,43 @@
-@use "./variables";
-
 // **Once in portfolio directory** Compile using:
 // sass --watch scss/main.scss dist/css/styles.css
 // Ctrl-C to stop
 
-html {
-    scroll-behavior: smooth;
-}
+@use "./variables";
 
+html,
 body {
-    background-color: variables.$dark-color;
-    color: variables.$light-color;
+    height: 100%;
     overflow-x: hidden;
 }
 
-// Start light mode classes
-.light-mode {
-    background-color: variables.$light-color;
-    color: variables.$dark-color;
-    // transition: 400ms; -- would only slow transition when switching from dark to light, not light to dark
+html {
+    font-size: 1rem;
+}
 
-    a {
-        color: variables.$blue-color;
-    }
-
-    button {
-        background-color: variables.$dark-color;
-        color: variables.$light-color;
-    }
-
-    .card {
-        border: 1px solid variables.$dark-color;
-    }
-
-    .scrolled {
-        background-color: variables.$dark-color;
-    }
-
-    hr {
-        background: variables.$blue-color;
-    }
-
-    #mainNavbar {
-        .navbar-toggler {
-            background-color: variables.$light-color;
-            color: variables.$dark-color;
-            border: 1px solid variables.$pink-color;
-        }
-
-        ul {
-            a {
-                &:before {
-                    background: variables.$blue-color;
-                }
-            }
-        }
+@media (min-width: 768px) {
+    html {
+        font-size: 1.1rem;
     }
 }
-// End light mode classes
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+    font-family: var(--ff-body);
+}
+
+.ff-title {
+    font-family: var(--ff-title);
+}
+
+.ff-body {
+    font-family: var(--ff-body);
+}
+
+.ff-system {
+    font-family: var(--ff-system);
+}
 
 a {
     color: variables.$blue-color;
@@ -71,8 +51,8 @@ a {
 
 button,
 .btn {
-    background-color: variables.$light-color;
-    color: variables.$dark-color;
+    background-color: var(--text);
+    color: var(--bg);
 
     &:hover {
         color: variables.$pink-color;
@@ -90,16 +70,10 @@ hr {
     position: relative;
 }
 
-#intro {
-    .cursive {
-        font-family: "Vast Shadow", cursive;
-    }
-}
-
 #mainNavbar {
     .navbar-toggler {
         background-color: variables.$pink-color;
-        color: variables.$light-color;
+        color: var(--text);
     }
 
     .navbar-brand {
@@ -126,7 +100,7 @@ hr {
                 content: "";
                 width: 80%;
                 height: 3px;
-                background: variables.$light-color;
+                background: var(--text);
                 transform: translateX(-100%);
                 opacity: 0;
             }
@@ -188,7 +162,7 @@ hr {
     -webkit-transition: background-color 1s ease-in-out;
     -moz-transition: background-color 1s ease-in-out;
     -o-transition: background-color 1s ease-in-out;
-    background: variables.$light-color;
+    background: var(--text);
 
     a {
         color: variables.$blue-color;
@@ -223,7 +197,7 @@ hr {
     border: none;
 
     .card-body {
-        color: variables.$dark-color;
+        color: var(--bg);
     }
 
     &:hover {
