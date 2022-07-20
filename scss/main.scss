@@ -39,6 +39,26 @@ body {
     font-family: var(--ff-system);
 }
 
+.color-bg {
+    font-family: var(--bg) !important;
+}
+
+.color-text {
+    font-family: var(--text);
+}
+
+.color-primary {
+    font-family: var(--primary);
+}
+
+.color-secondary {
+    font-family: var(--secondary);
+}
+
+.color-tertiary {
+    font-family: var(--tertiary);
+}
+
 a {
     color: variables.$blue-color;
     text-decoration: none;
@@ -186,22 +206,31 @@ hr {
 
 //Start hover transform/transition for porftolio cards
 .card {
-    transform: perspective(750px) translate3d(0px, 0px, -250px) rotateX(27deg)
+    transform: perspective(850px) translate3d(0px, 0px, -150px) rotateX(27deg)
         scale(0.9, 0.9);
     box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
-    transition: 0.4s ease-in-out transform;
-    -webkit-transition: 0.4s ease-in-out transform;
-    -moz-transition: 0.4s ease-in-out transform;
-    -o-transition: 0.4s ease-in-out transform;
-
+    transition: 0.3s ease-in-out transform;
+    -webkit-transition: 0.3s ease-in-out transform;
+    -moz-transition: 0.3s ease-in-out transform;
+    -o-transition: 0.3s ease-in-out transform;
     border: none;
-
-    .card-body {
-        color: var(--bg);
-    }
 
     &:hover {
         transform: translate3d(0px, 0px, -250px);
     }
 }
 //End hover transform/transition for porftolio cards
+
+[color-mode="light"] {
+    .card-title,
+    .card-text {
+        color: var(--text);
+    }
+}
+
+[color-mode="dark"] {
+    .card-title,
+    .card-text {
+        color: var(--bg);
+    }
+}
