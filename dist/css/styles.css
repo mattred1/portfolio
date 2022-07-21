@@ -28,19 +28,13 @@
   display: none;
 }
 
-html,
-body {
-  height: 100%;
-  overflow-x: hidden;
-}
-
 html {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 @media (min-width: 768px) {
   html {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }
 body {
@@ -48,6 +42,7 @@ body {
   color: var(--text);
   overflow-x: hidden;
   font-family: var(--ff-body);
+  height: 100%;
 }
 
 .ff-title {
@@ -132,19 +127,19 @@ hr {
   position: relative;
 }
 
-#mainNavbar .navbar-toggler {
+#mainNav .navbar-toggler {
   background-color: var(--tertiary);
 }
-#mainNavbar .navbar-collapse {
+#mainNav ul {
   display: flex;
   list-style-type: none;
   font-weight: 900;
 }
-#mainNavbar .navbar-collapse a {
+#mainNav ul a {
   margin: 0 10px;
   position: relative;
 }
-#mainNavbar .navbar-collapse a:before {
+#mainNav ul a:before {
   position: absolute;
   bottom: 0px;
   content: "";
@@ -154,7 +149,7 @@ hr {
   transform: translateX(-80%);
   opacity: 0;
 }
-#mainNavbar .navbar-collapse a:hover:before {
+#mainNav ul a:hover:before {
   opacity: 1;
   transition: 0.5s transform ease, 0.5s opacity ease;
   transform: translateX(0);

@@ -29,15 +29,22 @@ toggleColorButtons.forEach(btn => {
 
 // ================================================================================
 
+window.onscroll = () => { scrollNavbar() };
 
-// adds background color on scroll
-$(function () {
-    $(document).scroll(function () {
-        var $nav = $("#mainNavbar");
-        $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-    });
-});
+scrollNavbar = () => {
+    // Target elements
+    const mainNav = document.getElementById("mainNav");
 
+    if (document.documentElement.scrollTop > 100) {
+        mainNav.classList.add("scrolled");
+    } else {
+        mainNav.classList.remove("scrolled");
+    }
+}
+
+
+
+// ================================================================================
 
 
 var nextWord = (function () {
@@ -50,9 +57,3 @@ var nextWord = (function () {
 
 
 
-
-
-//Toggle dark/light mode
-function toggleDarkLight() {
-    $("body").toggleClass("light-mode")
-};
