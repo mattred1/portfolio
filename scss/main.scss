@@ -39,33 +39,52 @@ body {
     font-family: var(--ff-system);
 }
 
-.color-bg {
-    font-family: var(--bg) !important;
+.c-bg {
+    color: var(--bg);
 }
 
-.color-text {
-    font-family: var(--text);
+.bc-bg {
+    background-color: var(--bg);
+}
+.c-text {
+    color: var(--text);
 }
 
-.color-primary {
-    font-family: var(--primary);
+.bc-text {
+    background-color: var(--text);
 }
 
-.color-secondary {
-    font-family: var(--secondary);
+.c-primary {
+    color: var(--primary);
 }
 
-.color-tertiary {
-    font-family: var(--tertiary);
+.bc-primary {
+    background-color: var(--primary);
+}
+
+.c-secondary {
+    color: var(--secondary);
+}
+
+.bc-secondary {
+    background-color: var(--secondary);
+}
+
+.c-tertiary {
+    color: var(--tertiary);
+}
+
+.bc-tertiary {
+    background-color: var(--tertiary);
 }
 
 a {
-    color: variables.$blue-color;
+    color: var(--primary);
     text-decoration: none;
 
     &:hover {
         text-decoration: overline;
-        color: variables.$blue-color;
+        color: var(--primary);
     }
 }
 
@@ -75,13 +94,13 @@ button,
     color: var(--bg);
 
     &:hover {
-        color: variables.$pink-color;
+        color: var(--tertiary);
     }
 }
 
 hr {
     height: 25vh;
-    background: variables.$pink-color;
+    background: var(--tertiary);
     margin-top: 6rem;
     margin-bottom: 6rem;
     width: 100%;
@@ -92,19 +111,10 @@ hr {
 
 #mainNavbar {
     .navbar-toggler {
-        background-color: variables.$pink-color;
-        color: var(--text);
+        background-color: var(--tertiary);
     }
 
-    .navbar-brand {
-        button {
-            border-radius: 50%;
-            border: none;
-            transition: 1s;
-        }
-    }
-
-    ul {
+    .navbar-collapse {
         display: flex;
         list-style-type: none;
         font-weight: 900;
@@ -116,19 +126,19 @@ hr {
 
             &:before {
                 position: absolute;
-                bottom: -2px;
+                bottom: 0px;
                 content: "";
                 width: 80%;
                 height: 3px;
                 background: var(--text);
-                transform: translateX(-100%);
+                transform: translateX(-80%);
                 opacity: 0;
             }
 
             &:hover {
                 &:before {
                     opacity: 1;
-                    transition: 0.5s transform ease, 0.8s opacity ease;
+                    transition: 0.5s transform ease, 0.5s opacity ease;
                     transform: translateX(0);
                 }
             }
@@ -185,10 +195,10 @@ hr {
     background: var(--text);
 
     a {
-        color: variables.$blue-color;
+        color: var(--secondary);
 
         &:before {
-            background: variables.$blue-color !important;
+            background: var(--secondary) !important;
         }
     }
 }
