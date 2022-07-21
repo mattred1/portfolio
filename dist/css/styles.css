@@ -5,7 +5,7 @@
       "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-:root[color-mode=light] {
+:root[c-mode=light] {
   --bg: hsl(198, 10%, 90%);
   --text: hsl(198, 10%, 10%);
   --primary: hsl(198, 62%, 72%);
@@ -13,10 +13,10 @@
   --tertiary: hsl(353, 62%, 72%);
   /* Any element with the class "light--hidden" will be hidden when the site is set to Light Mode */
 }
-:root[color-mode=light] .light--hidden {
+:root[c-mode=light] .light--hidden {
   display: none;
 }
-:root[color-mode=dark] {
+:root[c-mode=dark] {
   --bg: hsl(198, 10%, 10%);
   --text: hsl(198, 10%, 90%);
   --primary: hsl(198, 62%, 72%);
@@ -24,7 +24,7 @@
   --tertiary: hsl(353, 62%, 72%);
   /* Any element with the class "dark--hidden" will be hidden when the site is set to Dark Mode */
 }
-:root[color-mode=dark] .dark--hidden {
+:root[c-mode=dark] .dark--hidden {
   display: none;
 }
 
@@ -62,33 +62,53 @@ body {
   font-family: var(--ff-system);
 }
 
-.color-bg {
-  font-family: var(--bg) !important;
+.c-bg {
+  color: var(--bg);
 }
 
-.color-text {
-  font-family: var(--text);
+.bc-bg {
+  background-color: var(--bg);
 }
 
-.color-primary {
-  font-family: var(--primary);
+.c-text {
+  color: var(--text);
 }
 
-.color-secondary {
-  font-family: var(--secondary);
+.bc-text {
+  background-color: var(--text);
 }
 
-.color-tertiary {
-  font-family: var(--tertiary);
+.c-primary {
+  color: var(--primary);
+}
+
+.bc-primary {
+  background-color: var(--primary);
+}
+
+.c-secondary {
+  color: var(--secondary);
+}
+
+.bc-secondary {
+  background-color: var(--secondary);
+}
+
+.c-tertiary {
+  color: var(--tertiary);
+}
+
+.bc-tertiary {
+  background-color: var(--tertiary);
 }
 
 a {
-  color: #007dff;
+  color: var(--primary);
   text-decoration: none;
 }
 a:hover {
   text-decoration: overline;
-  color: #007dff;
+  color: var(--primary);
 }
 
 button,
@@ -98,12 +118,12 @@ button,
 }
 button:hover,
 .btn:hover {
-  color: #ef476f;
+  color: var(--tertiary);
 }
 
 hr {
   height: 25vh;
-  background: #ef476f;
+  background: var(--tertiary);
   margin-top: 6rem;
   margin-bottom: 6rem;
   width: 100%;
@@ -113,36 +133,30 @@ hr {
 }
 
 #mainNavbar .navbar-toggler {
-  background-color: #ef476f;
-  color: var(--text);
+  background-color: var(--tertiary);
 }
-#mainNavbar .navbar-brand button {
-  border-radius: 50%;
-  border: none;
-  transition: 1s;
-}
-#mainNavbar ul {
+#mainNavbar .navbar-collapse {
   display: flex;
   list-style-type: none;
   font-weight: 900;
 }
-#mainNavbar ul a {
+#mainNavbar .navbar-collapse a {
   margin: 0 10px;
   position: relative;
 }
-#mainNavbar ul a:before {
+#mainNavbar .navbar-collapse a:before {
   position: absolute;
-  bottom: -2px;
+  bottom: 0px;
   content: "";
   width: 80%;
   height: 3px;
   background: var(--text);
-  transform: translateX(-100%);
+  transform: translateX(-80%);
   opacity: 0;
 }
-#mainNavbar ul a:hover:before {
+#mainNavbar .navbar-collapse a:hover:before {
   opacity: 1;
-  transition: 0.5s transform ease, 0.8s opacity ease;
+  transition: 0.5s transform ease, 0.5s opacity ease;
   transform: translateX(0);
 }
 
@@ -192,10 +206,10 @@ hr {
   background: var(--text);
 }
 .scrolled a {
-  color: #007dff;
+  color: var(--secondary);
 }
 .scrolled a:before {
-  background: #007dff !important;
+  background: var(--secondary) !important;
 }
 
 .zoom {

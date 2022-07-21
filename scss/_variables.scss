@@ -8,7 +8,7 @@
         "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
     //Colors
-    &[color-mode="light"] {
+    &[c-mode="light"] {
         --bg: hsl(198, 10%, 90%);
         --text: hsl(198, 10%, 10%);
         --primary: hsl(198, 62%, 72%);
@@ -21,7 +21,7 @@
         }
     }
 
-    &[color-mode="dark"] {
+    &[c-mode="dark"] {
         --bg: hsl(198, 10%, 10%);
         --text: hsl(198, 10%, 90%);
         --primary: hsl(198, 62%, 72%);
