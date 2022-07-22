@@ -1,3 +1,17 @@
+if (
+    // Checks user's site preference for dark mode OR an OS-level preference for light mode AND no site preference
+    localStorage.getItem('c-mode') === 'light' ||
+    (window.matchMedia('(prefers-color-scheme: light)').matches &&
+        !localStorage.getItem('c-mode'))
+) {
+    // if true, set the site to Dark Mode
+    document.documentElement.setAttribute('c-mode', 'light')
+}
+
+
+// ================================================================================
+
+
 // Toggle light & dark mode
 const toggleColorMode = (e) => {
     // Switch to Light Mode
