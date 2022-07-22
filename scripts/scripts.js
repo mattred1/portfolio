@@ -10,8 +10,8 @@ const toggleColorMode = (e) => {
         return;
     }
 
-    /* Switch to Dark Mode
-    Sets the custom HTML attribute */
+    //  Switch to Dark Mode
+    // Sets the custom HTML attribute 
     document.documentElement.setAttribute("c-mode", "dark");
 
     // Sets the user's preference in local storage
@@ -29,6 +29,7 @@ toggleColorButtons.forEach(btn => {
 
 // ================================================================================
 
+
 window.onscroll = () => { scrollNavbar() };
 
 scrollNavbar = () => {
@@ -43,17 +44,17 @@ scrollNavbar = () => {
 }
 
 
-
 // ================================================================================
 
 
-var nextWord = (function () {
-    var wordArray = ['a developer', 'a designer', 'a learner', 'a team leader', 'a D&D nerd', 'a cat dad'];
-    var count = -1;
-    return function () {
-        return wordArray[++count % wordArray.length];
-    }
-}());
+const description = ['a developer', 'a designer', 'a learner', 'a team leader', 'a D&D nerd', 'a cat dad'];
+let count = -1;
+
+const nextWord = () => {
+    document.getElementById('whoAmI').innerHTML = description[++count % description.length];
+};
+
+document.getElementById("randWord").addEventListener("click", nextWord);
 
 
-
+// ================================================================================
