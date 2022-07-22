@@ -7,13 +7,25 @@
         "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
         "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
+    --c-hue: 198;
+    --c-high: 90%;
+    --c-low: 10%;
+
     //Colors
     &[c-mode="light"] {
-        --bg: hsl(198, 10%, 90%);
-        --text: hsl(198, 10%, 10%);
-        --primary: hsl(198, 62%, 72%);
-        --secondary: hsl(139, 62%, 72%);
-        --tertiary: hsl(353, 62%, 72%);
+        /* Light color palette */
+        --c-1: hsl(var(--c-hue), var(--c-low), var(--c-high)); /* #e3e7e8 */
+        --c-2: hsl(var(--c-hue), var(--c-low), var(--c-low)); /* #171b1c */
+        --primary: hsl(198, 24%, 39%); /* #4c6d7b */
+        --secondary: hsl(139, 24%, 39%); /* #4c7b5b */
+        --tertiary: hsl(353, 24%, 39%); /* #7b4c51 */
+
+        /* Dark color palette */
+        --c-1-alt: var(--c-2);
+        --c-2-alt: var(--c-1);
+        --primary-alt: hsl(198, 62%, 72%); /* #8bc9e4; */
+        --secondary-alt: hsl(139, 62%, 72%); /* #8be4a7 */
+        --tertiary-alt: hsl(353, 62%, 72%); /* #e48b96 */
 
         /* Any element with the class "light--hidden" will be hidden when the site is set to Light Mode */
         .light--hidden {
@@ -22,11 +34,19 @@
     }
 
     &[c-mode="dark"] {
-        --bg: hsl(198, 10%, 10%);
-        --text: hsl(198, 10%, 90%);
-        --primary: hsl(198, 62%, 72%);
-        --secondary: hsl(139, 62%, 72%);
-        --tertiary: hsl(353, 62%, 72%);
+        /* Dark color palette */
+        --c-1: hsl(var(--c-hue), var(--c-low), var(--c-low)); /* #171b1c */
+        --c-2: hsl(var(--c-hue), var(--c-low), var(--c-high)); /* #e3e7e8 */
+        --primary: hsl(198, 62%, 72%); /* #8bc9e4; */
+        --secondary: hsl(139, 62%, 72%); /* #8be4a7 */
+        --tertiary: hsl(353, 62%, 72%); /* #e48b96 */
+
+        /* Light color palette */
+        --c-1-alt: var(--c-2);
+        --c-2-alt: var(--c-1);
+        --primary-alt: hsl(198, 24%, 39%); /* #4c6d7b */
+        --secondary-alt: hsl(139, 24%, 39%); /* #4c7b5b */
+        --tertiary-alt: hsl(353, 24%, 39%); /* #7b4c51 */
 
         /* Any element with the class "dark--hidden" will be hidden when the site is set to Dark Mode */
         .dark--hidden {
@@ -34,10 +54,3 @@
         }
     }
 }
-
-$dark-color: #24292d;
-$light-color: #f1f7f8;
-$pink-color: #ef476f;
-$blue-color: #007dff;
-$gray-color: #c6c6c6;
-$floral-color: #a288e3;
