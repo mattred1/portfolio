@@ -38,13 +38,13 @@
     <nav id="mainNav" class="navbar navbar-expand-md sticky-top">
 
         <!--- Light mode button --->
-        <button class="p-1 rounded-circle zoom c-mode__btn light--hidden" aria-label="Toggle light mode">
-            <i class="fa-solid fa-sun fa-spin fa-2x" style="--fa-animation-duration: 2s; --fa-animation-iteration-count: 1;--fa-animation-timing: ease-in-out;"></i>
+        <button class="p-1 rounded-circle c-mode__btn light--hidden" aria-label="Toggle light mode">
+            <i class="fa-regular fa-sun fa-spin fa-xl zoom" style="--fa-animation-duration: 2s; --fa-animation-iteration-count: 1;--fa-animation-timing: ease-in-out; color:yellow;"></i>
         </button>
 
         <!--- Dark mode button --->
-        <button class="p-1 rounded-circle zoom c-mode__btn dark--hidden" aria-label="Toggle dark mode">
-            <i class="fa-solid fa-moon fa-spin fa-2x" style="--fa-animation-duration: 2s; --fa-animation-iteration-count: 1;--fa-animation-timing: ease-in-out;"></i>
+        <button class="p-1 rounded-circle c-mode__btn dark--hidden" aria-label="Toggle dark mode">
+            <i class="fa-solid fa-moon fa-spin fa-xl zoom" style="--fa-animation-duration: 2s; --fa-animation-iteration-count: 1;--fa-animation-timing: ease-in-out;"></i>
         </button>
 
 
@@ -83,16 +83,11 @@
 
     <section id="intro" class="container-fluid mb-4">
 
-
         <div class="text-center mt-5 ff-title px-1">
-            <h1 class="display-1 font-weight-bolder" style="line-height:1;">Matt is <button class="btn-lg btn zoom" onclick="document.getElementById('whoAmI').innerHTML = nextWord();">...</button></h1>
+            <h1 class="display-1 font-weight-bolder" style="line-height:1;">Matt is <button class="btn-lg btn" id="randWord">...</button></h1>
 
             <h1 class="display-4 font-weight-bolder" id="whoAmI"></h1>
         </div>
-
-        <!-- <div class="col-lg-4 d-none d-lg-block px-0">
-                <img class="img-fluid" src="imgs/selfie.jpg" alt="Selfie">
-            </div> -->
 
     </section>
 
