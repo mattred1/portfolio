@@ -3,7 +3,7 @@ type Project = {
   name: string
   description: string
   link: string
-  video: string
+  image: string
   id: string
 }
 
@@ -30,21 +30,19 @@ type SocialLink = {
 
 export const PROJECTS: Project[] = [
   {
-    name: 'Lorem ipsum 1',
+    name: 'My wedding',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    link: '/',
-    video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/newProfileItem/d898be8a-7037-4c71-af0c-8997239b050d.mp4?_a=DATAdtAAZAA0',
+      'I thought it would be fun to build my own wedding website as one of my first big projects! I was right.',
+    link: 'https://mattred1.github.io/wedding',
+    image: 'https://mattredinger.com/imgs/wedding-big.jpg', 
     id: 'project1',
   },
   {
-    name: 'Lorem ipsum 2',
+    name: 'Spain trip',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    link: '/',
-    video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/newProfileItem/d898be8a-7037-4c71-af0c-8997239b050d.mp4?_a=DATAdtAAZAA0',
+      'I journaled throughout my 2019 Spain trip and wanted to share it with strangers.',
+    link: 'https://mattred1.github.io/itinerary',
+    image: 'https://mattredinger.com/imgs/spain-big.jpg',
     id: 'project2',
   },
 ]
