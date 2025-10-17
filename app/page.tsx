@@ -55,14 +55,14 @@ function ProjectImage({ src }: ProjectImageProps) {
             <MorphingDialogTrigger>
                 <img
                     src={src}
-                    className="aspect-auto w-full cursor-zoom-in rounded-xl"
+                    className="aspect-video min-w-auto cursor-zoom-in rounded-xl"
                 />
             </MorphingDialogTrigger>
             <MorphingDialogContainer>
-                <MorphingDialogContent className="relative aspect-auto rounded-2xl bg-zinc-50 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950 dark:ring-zinc-800/50">
+                <MorphingDialogContent className="aspect-auto rounded-2xl bg-zinc-50 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950 dark:ring-zinc-800/50">
                     <img
                         src={src}
-                        className="aspect-auto h-[50vh] w-full rounded-xl md:h-[70vh]"
+                        className="aspect-auto h-[70vh] w-full rounded-xl md:h-[70vh]"
                     />
                 </MorphingDialogContent>
                 <MorphingDialogClose
@@ -142,20 +142,20 @@ export default function Personal() {
                 transition={TRANSITION_SECTION}
             >
                 <h3 className="mb-5 text-lg font-medium">Selected Projects</h3>
-                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
                     {PROJECTS.map((project) => (
                         <div key={project.name} className="space-y-2">
-                            <div className="relative rounded-2xl bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50">
+                            <div className="rounded-2xl bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50">
                                 <ProjectImage src={project.image} />
                             </div>
                             <div className="px-1">
                                 <a
-                                    className="font-base group relative inline-block font-[450] text-zinc-900 dark:text-zinc-50"
+                                    className="font-base group font-[450] text-zinc-900 dark:text-zinc-50"
                                     href={project.link}
                                     target="_blank"
                                 >
                                     {project.name}
-                                    <span className="absolute bottom-0.5 left-0 block h-[1px] w-full max-w-0 bg-zinc-900 dark:bg-zinc-50 transition-all duration-200 group-hover:max-w-full"></span>
+                                    <span className="bottom-0.5 left-0 h-[1px] w-full max-w-0 bg-zinc-900 dark:bg-zinc-50 transition-all duration-200 group-hover:max-w-full"></span>
                                 </a>
                                 <p className="text-base text-zinc-600 dark:text-zinc-400">
                                     {project.description}
