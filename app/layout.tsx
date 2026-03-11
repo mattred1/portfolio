@@ -15,11 +15,8 @@ export const metadata: Metadata = {
     alternates: {
         canonical: '/'
     },
-    title: {
-        default: 'Matt Redinger portfolio',
-        template: '%s | Nim'
-    },
-    description: 'A portfolio site for Matt Redinger, built with Next.js 15, React 19 and Motion-Primitives.',
+    title: 'Matt Redinger\'s website',
+    description: 'Matthew Redinger\'s website, built with Next.js, React and Motion-Primitives.',
 };
 
 
