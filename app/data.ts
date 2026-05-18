@@ -83,7 +83,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
   },
   {
     company: 'Legacy Research Group',
-    title: 'Design Engineer',
+    title: 'Web Developer & Designer',
     start: 'August 2021',
     end: 'July 2022',
     link: 'https://www.linkedin.com/company/legacy-research-group',
