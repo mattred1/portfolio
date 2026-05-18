@@ -101,20 +101,24 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
-    label: 'Github',
-    link: 'https://github.com/mattred1',
-  },
-  {
-    label: 'BlueSky',
-    link: 'https://bsky.app/profile/mattredinger.com',
-  },
-  {
     label: 'LinkedIn',
     link: 'https://www.linkedin.com/in/mredinger',
   },
   {
+    label: 'Github',
+    link: 'https://github.com/mattred1',
+  },
+  {
+    label: 'Threads',
+    link: 'https://www.threads.com/@drattdredinger',
+  },
+  {
     label: 'Instagram',
     link: 'https://www.instagram.com/drattdredinger',
+  },
+  {
+    label: 'BlueSky',
+    link: 'https://bsky.app/profile/mattredinger.com',
   },
 ]
 
