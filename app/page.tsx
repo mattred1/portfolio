@@ -130,7 +130,7 @@ export default function Personal() {
                 transition={TRANSITION_SECTION}
             >
                 <div className="flex-1">
-                    <p className="text-zinc-600 dark:text-zinc-400">
+                    <p className="text-zinc-600 text-lg dark:text-zinc-400">
                         Focused on creating intuitive and performant web experiences.
                         Bridging the gap between design and development.
                     </p>
@@ -141,7 +141,7 @@ export default function Personal() {
                 variants={VARIANTS_SECTION}
                 transition={TRANSITION_SECTION}
             >
-                <h3 className="mb-5 text-lg font-medium">Some Projects</h3>
+                <h3 className="mb-5 text-xl font-bold font-display">Some Projects</h3>
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
                     {PROJECTS.map((project) => (
                         <div key={project.name} className="space-y-2">
@@ -170,7 +170,7 @@ export default function Personal() {
                 variants={VARIANTS_SECTION}
                 transition={TRANSITION_SECTION}
             >
-                <h3 className="mb-5 text-lg font-medium">Work Experience</h3>
+                <h3 className="mb-5 text-xl font-bold font-display">Work Experience</h3>
                 <div className="flex flex-col space-y-2">
                     {WORK_EXPERIENCE.map((job) => (
                         <a
@@ -208,7 +208,7 @@ export default function Personal() {
                 variants={VARIANTS_SECTION}
                 transition={TRANSITION_SECTION}
             >
-                <h3 className="mb-5 text-lg font-medium">Connect with me</h3>
+                <h3 className="mb-5 text-xl font-bold font-display">Connect with me</h3>
                 <p className="mb-5 text-zinc-600 dark:text-zinc-400">
                     <a className="underline dark:text-zinc-300" href={`${RESUME}`}>
                         {'Resume'}
