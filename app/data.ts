@@ -123,3 +123,5 @@ export const SOCIAL_LINKS: SocialLink[] = [
 ]
 
 export const EMAIL = 'email.mredinger@gmail.com'
+
+export const RESUME = 'https://docs.google.com/document/d/1vk4ehDcpzsYUaM0bHPN4e4Wmoc4HmhuQsIlDsTg5jN4/edit?usp=sharing'
